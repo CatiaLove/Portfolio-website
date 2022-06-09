@@ -1,0 +1,100 @@
+main section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main section form {
+  width: 50%;
+  display: flex;
+  padding: 3rem 2rem;
+  background-color: #d4d6f3;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+main section form p {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #181e74;
+}
+main section form div.signup-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+form div.signup-container div.signup-form-col-6 {
+  width: 45%;
+}
+div.signup-form-col-6 label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #181e74;
+  display: block;
+}
+div.signup-form-col-6 input[type=text],
+div.signup-form-col-6 input[type=email],
+div.signup-form-col-6 input[type=tel],
+div.signup-form-col-6 input[type=password],
+div.signup-form-col-6 select {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  color: #3e47c8;
+  background-color: #fff;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+div.signup-form-col-6 select {
+  width: 100%;
+}
+main section form div.signup-form-button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+main section form div.signup-form-button button {
+  width: 45%;
+  background-color: #3e47c8;
+  padding: 0.4rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 1.5rem;
+  outline:none;
+  border: none;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  main section form {
+    width: 70%;
+  }
+  main section form div.signup-container {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  form div.signup-container div.signup-form-col-6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  div.signup-form-col-6 label {
+    align-self: flex-start;
+  }
+  main section form div.signup-form-button {
+    margin-top: 1rem;
+  }
+  main section form div.signup-form-button button {
+    width: 100%;
+  }
+}
